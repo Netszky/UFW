@@ -40,6 +40,7 @@ body {
    background: rgba(0, 0, 0, .9);
    border: 1px solid #333;
    height: auto;
+   transition: ease-in 0.5s;
 }
 label {
     color: #363636;
