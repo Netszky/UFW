@@ -54,10 +54,6 @@ input {
     color: #fff;
     height: 46px;
 }
-input:hover {
-    outline: 1px solid;
-    outline-color: #fff;
-}
 input:focus {
     outline-color: #fff;
 }
