@@ -24,14 +24,15 @@ header {
     margin: 0;
     padding: 0;
 }
-.box li:nth-child(5){
+.box li:nth-child(1){
+    border-right: none;
     margin-right: 10px;
 }
-.box li:nth-child(1){
+.box li:nth-child(5){
     border-right: none;
 }
 .box li:nth-child(2){
-    padding-right: 5px;
+    margin-right: 10px;
 }
 .navbar__content {
     color: white;
