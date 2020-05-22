@@ -6,18 +6,24 @@ header {
     display: block;
 }
 .navbar__1{
+    position: absolute;
     display: flex;
+    z-index: 100;
     height: 50px;
     background-color: #292929;
+    width: 100%;
+    top: 0%;
 }
 .box {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0;
-   
+}
+.box li:nth-child(5){
+    margin-right: 10px;
 }
 .navbar__content {
     color: white;
