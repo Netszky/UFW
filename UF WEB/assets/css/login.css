@@ -11,17 +11,24 @@ form {
 }
 
 body {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero.jpg");
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/login.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    width: 100%;
 }
-
-div {
+.form__content {
+    position: absolute;
    padding: 20px;
    width: 470px;
    display: block;
@@ -30,7 +37,7 @@ div {
    border-radius: 2px;
    background: rgba(0, 0, 0, .9);
    border: 1px solid #333;
-   height: 25%;
+   height: auto;
 }
 label {
     color: #363636;

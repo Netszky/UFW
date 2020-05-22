@@ -29,7 +29,7 @@ body {
     width: 100%;
 }
 
-div {
+.form__content {
    position: absolute;
    padding: 20px;
    width: 470px;
@@ -60,6 +60,7 @@ input:focus {
     outline-color: #fff;
 }
 h1 {
+    text-transform: uppercase;
     color: #fff;
     font-size: 34px;
     font-weight: 700;
