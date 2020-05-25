@@ -56,25 +56,23 @@ header {
 }
 .box li:nth-child(2){
     border: none;
+    background-color: #363636;
 }
 .box li:nth-child(2):hover{
-    background-color: none;
     cursor: initial;
-    background-color: #292929;
 }
 .search {
     background-color: #363636;
     border: none;
-    color: #cacaca;
+    color: white;
     padding: 2px 5px;
     width: 320px;
     height: 22px;
     border-radius: 3px 0 0 3px;
 }
 .search:focus {
-    color: #363636;
-    outline: #cacaca;
-    box-shadow: 0 0 0pt 0.2pt #cacaca;
+    color: #cacaca;
+    outline: none;
 }
 .logo span:nth-child(1){
     color: white;
