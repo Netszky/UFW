@@ -102,3 +102,39 @@ header {
 .bi-search {
     margin-top: 5px;
 }
+.der {
+    position: relative;
+    text-align: center;
+}
+.der:hover .s_menu {
+    display: block;
+}
+.s_menu {
+    right: 0px;
+    top: 100%;
+    list-style: none;
+    display: none;
+    background-color: #363636;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.s_menu li {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    
+}
+.s_menu li a {
+    padding: 0px 52px 10px 52px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.s_menu li a:hover {
+    color: #f80;
+    text-decoration: none;
+}
