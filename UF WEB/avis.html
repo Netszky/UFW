@@ -41,12 +41,23 @@
     <div class="form__content">
         <h1>Noter Le Jeu</h1>
         <form action="" method="POST">
-                <input type="radio" id="mail" placeholder="E-mail" name="user_mail">
-                <input type="password" placeholder="Password" id="password">
-                <input id="submit" class="login_button" value="Se Connecter">
-                <span><a href="">Inscrivez-vous !</a></span>
+            <div class="note">
+                <label for="note1">1</label>
+                <input type="radio" id="note1" placeholder="E-mail" name="user_mail">
+                <label for="note2">2</label>
+                <input type="radio" id="note2" placeholder="E-mail" name="user_mail">
+                <label for="note3">3</label>
+                <input type="radio" id="note3" placeholder="E-mail" name="user_mail">
+                <label for="note4">4</label>
+                <input type="radio" id="note4" placeholder="E-mail" name="user_mail">
+                <label for="note5">5</label>
+                <input type="radio" id="note5" placeholder="E-mail" name="user_mail">
+            </div>
+            <div class="content">
+                <textarea placeholder="255 caractère maxi" rows="5" name="desc" id="desc"></textarea>
+            </div>
+                <input type="submit" class="login_button" value="Se Connecter">
         </form>
-        <span><a href="">Nom d'utilisateur ou mot de passe oublié ?</a></span>
     </div>
 </body>
 </html>
