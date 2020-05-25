@@ -48,8 +48,31 @@ body {
 }
 .game__review {
     margin: 0 10px 0 10px;
+    border-bottom: 2px solid #292929;
 }
 .author__review {
     color: #cacaca;
     text-transform: uppercase;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.note {
+    background-color: #f90;
+    margin: 20px 20px 20px 0;
+    padding: 15px 20px;
+    width: 290px;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+}
+.note:hover {
+    background: #ffa31a;
+}
+.note a {
+    color: #000;
+    text-decoration: none;
 }

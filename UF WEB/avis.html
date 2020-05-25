@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/catalogue.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="assets\css\avis.css">
+    <link rel="stylesheet" href="assets\css\base.css">
 </head>
 <header>
     <div class="navbar__1">
@@ -37,23 +36,17 @@
     </div>
 </header>
 <body>
-    <div class="container">
-        <div class="product">
-            <img src="assets/css/img/login.jpg" alt="image jeux" height="210px" width="210px">
-            <div class="product__prop">
-                <p class="text">Titre</p>
-                <p class="text">Prix</p>
-            </div>
-            <div class="detail">
-                <i class="fa fa-thumbs-o-up" style="font-size:14px;color:white"> <p class="avis text">85%</p> </i>
-                <p class="stock text">Stock</p>
-            </div>
-            <div class="button">
-                <span class="note">
-                    <a href="product.html">Consulter</a>
-                </span>
-            </div>
-        </div>
+    <div class="img">
+    </div>
+    <div class="form__content">
+        <h1>Noter Le Jeu</h1>
+        <form action="" method="POST">
+                <input type="radio" id="mail" placeholder="E-mail" name="user_mail">
+                <input type="password" placeholder="Password" id="password">
+                <input id="submit" class="login_button" value="Se Connecter">
+                <span><a href="">Inscrivez-vous !</a></span>
+        </form>
+        <span><a href="">Nom d'utilisateur ou mot de passe oublié ?</a></span>
     </div>
 </body>
 </html>
