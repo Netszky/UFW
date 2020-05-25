@@ -33,7 +33,6 @@ header {
     border-right: none;
 }
 .box li:nth-child(2){
-    margin-right: 10px;
 }
 .navbar__content {
     color: white;
