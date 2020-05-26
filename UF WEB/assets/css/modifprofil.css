@@ -72,9 +72,13 @@ h1 {
     cursor: pointer;
     font-weight: 700;
     text-align: center;
+    border: 1px solid #f90;
 }
 .login_button:hover {
     background: #ffa31a;
+}
+.login_button:focus {
+    outline: none;
 }
 .title {
     font-size: 14px;

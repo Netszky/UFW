@@ -52,6 +52,7 @@ body {
 .button {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .note {
     background-color: #f90;
