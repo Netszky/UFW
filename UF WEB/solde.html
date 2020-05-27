@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/solde.css">
+    <title>GameHub</title>
+    <script>
+        var logo  = document.getElementsByClassName("color");
+        var test = document.getElementsByClassName("solde").value;
+        if (test > 10) {
+            logo.classList.add("green");
+        }
+        else {
+            logo.classList.add("red");
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <main>
+            <a href="base.html">
+            <div class="logo">
+                <span class="text">Solde</span>
+                <span class="color">Hub</span>
+                <span class="solde">10.99€</span>
+            </div>
+            </a>
+        </main>
+    </main>
+</body>
+</html>
