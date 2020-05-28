@@ -1,10 +1,10 @@
 body {
-    height: 1080px;
+    height: max-content;
     display: flex;
 }
 .product {
-    height: max-content;
-    width: 235px;
+    height: 10%;
+    width: 15%;
     margin-right: 20px;
     border-radius: 15px;
     border: 2px solid #292929;
@@ -25,38 +25,32 @@ body {
     border-bottom: 1px solid #292929;
     border-radius: 15px;
 }
-.product__desc {
-    color: #fff;
-    font-weight: normal;
-    font-size: 15px;
-    text-decoration: none;
-    font-family: Arial,Helvetica,sans-serif;
-}
 .product__desc, .price, .avis, .stock {
     margin: 0;
     color: #fff;
 }
 .detail {
     display: flex;
-    margin: 0 10px 10px 10px;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
 }
 .text {
     color: #fff;
 }
 .product__prop {
-    margin: 0 10px 0 10px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .button {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    width: 100%;
 }
 .note {
     background-color: #f90;
-    padding: 15px 20px;
+    padding: 15px 0px;
     width: 100%;
     border-radius: 0 0 15px 15px;
     color: #000;
@@ -66,5 +60,6 @@ body {
 }
 .note a {
     color: #292929;
-    padding: 15px 65px 15px 65px;
+    padding: 10% 30%;
+    width: 100%;
 }
