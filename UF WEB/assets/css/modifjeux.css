@@ -104,3 +104,6 @@ input:focus {
     list-style: none;
     padding: 0;
 }
+.file {
+    color: #fff;
+}
