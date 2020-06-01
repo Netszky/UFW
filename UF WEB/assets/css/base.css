@@ -2,9 +2,6 @@ body {
     margin: 0;
     background-color: black;
 }
-header {
-    display: block;
-}
 .navbar__1{
     position: absolute;
     position: fixed;
@@ -141,4 +138,9 @@ header {
 .s_menu li a:hover {
     color: #f80;
     text-decoration: none;
+}
+.simple__text {
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-left: 5px;
 }
