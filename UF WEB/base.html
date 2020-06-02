@@ -8,6 +8,32 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Document</title>
     </head>
+    <div class="sidebar__mobile">
+        <nav class="sidebar__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                    <p class="text">Solde</p>
+                    <p class="text">Julien</p>
+                </li>
+                <li class="nav__item">
+                    <a class="text">Catalogue</a>
+                </li>
+                <li class="nav__item">
+                    <a class="text" href="">Inscription</a>
+                </li>
+                <li class="nav__item">
+                    <a class="text" href="">Connexion</a>
+                </li>
+                {{for Catégories in categories}}
+                <li class="nav__item">
+                    <a class="text" href="">Categorie name</a>
+                </li>
+                {{endfor}}
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay"></div>
     <body>
 {% block navbar %}
     <header>
@@ -46,8 +72,15 @@
                 </li>
                 <li class="solde">10.99€</li>
             </ul>
+            <div class="burger__wrapper">
+                <div class="burger__menu">
+                </div>
+            </div>
         </div>
     </header>
-{% endblock %}
+    {% endblock %}
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+<script src="assets/js/burger.js"></script>
 </html>
