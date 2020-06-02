@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets\css\base.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="assets\css\BetterCatalogue.css">
+        <title>Document</title>
+    </head>
+    {% block navbar %}
+    <div class="sidebar__mobile">
+        <nav class="sidebar__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                    <p class="text">Solde</p>
+                    <p class="text">Julien</p>
+                </li>
+                <li class="nav__item">
+                    <a class="text">Catalogue</a>
+                </li>
+                <li class="nav__item">
+                    <a class="text" href="">Inscription</a>
+                </li>
+                <li class="nav__item">
+                    <a class="text" href="">Connexion</a>
+                </li>
+                {{for Catégories in categories}}
+                <li class="nav__item">
+                    <a class="text" href="">Categorie name</a>
+                </li>
+                {{endfor}}
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay"></div>
+    <header>
+        <div class="navbar__1">
+            <ul class="box">
+                <li class="navbar__content logo">
+                    <span class="logo__span1">Game</span>
+                    <span class="logo__span2">Hub</span>
+                </li>
+                <li class="navbar__content">
+                    <input class="search" type="text" placeholder="Rechercher parmis les 11,994,107 vidéos" maxlength="100" name="search" autocomplete="off">
+                    <span class="search__button">
+                        <svg class="bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="Black" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </span>
+                </li>
+                <li class="navbar__content der">
+                    Catégories
+                    <ul class="s_menu">
+                        <li><a href="">FPS</a></li>
+                        <li><a href="">FPS</a></li>
+                        <li><a href="">FPS</a></li>
+                        <li><a href="">FPS</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__content" >
+                    Inscription
+                </li>
+                <li class="navbar__content" >
+                    Connexion
+                </li>
+                <li>
+                    <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                </li>
+                <li class="solde">10.99€</li>
+            </ul>
+            <div class="burger__wrapper">
+                <div class="burger__menu">
+                </div>
+            </div>
+        </div>
+    </header>
+    {% endblock %}
+<body>
+      <section class="cards-wrapper">
+        <div class="card-grid-space">
+          <a class="card" href="" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+            <div>
+              <h1>Skyrim</h1>
+              <p>20€</p>
+              <div class="tags">
+                <div class="tag">Catégories</div>
+                <div class="tag"><p>85%</p> </i></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card-grid-space">
+            <a class="card" href="" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+              <div>
+                <h1>Skyrim</h1>
+                <p>20€</p>
+                <div class="tags">
+                  <div class="tag">Catégories</div>
+                  <div class="tag"><p>85%</p> </i></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-grid-space">
+            <a class="card" href="" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+              <div>
+                <h1>Skyrim</h1>
+                <p>20€</p>
+                <div class="tags">
+                  <div class="tag">Catégories</div>
+                  <div class="tag"><p>85%</p> </i></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-grid-space">
+            <a class="card" href="" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+              <div>
+                <h1>Skyrim</h1>
+                <p>20€</p>
+                <div class="tags">
+                  <div class="tag">Catégories</div>
+                  <div class="tag"><p>85%</p> </i></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-grid-space">
+            <a class="card" href="" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+              <div>
+                <h1>Skyrim</h1>
+                <p>20€</p>
+                <div class="tags">
+                  <div class="tag">Catégories</div>
+                  <div class="tag"><p>85%</p> </i></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-grid-space">
+            <a class="card" href="" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+              <div>
+                <h1>Skyrim</h1>
+                <p>20€</p>
+                <div class="tags">
+                  <div class="tag">Catégories</div>
+                  <div class="tag"><p>85%</p> </i></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+      </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+<script src="assets/js/burger.js"></script>
+</html>
