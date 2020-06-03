@@ -24,7 +24,7 @@ body {
    height: auto;
    transition: ease-in 0.5s;
 }
-.border {
+.border__form {
     margin-top: 5px;
     width: 100%;
     background-color: #f90;

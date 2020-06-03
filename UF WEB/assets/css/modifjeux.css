@@ -48,9 +48,10 @@ label {
 input:focus {
     outline-color: #fff;
 }
-.border {
+.border__form {
     margin-top: 5px;
     width: 100%;
+    margin: 0!important;
     background-color: #f90;
     height: 1px;
 }

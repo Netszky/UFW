@@ -42,7 +42,7 @@ input {
 input:focus {
     outline-color: #fff;
 }
-.border {
+.border__form{
     margin-top: 5px;
     width: 100%;
     background-color: #f90;
