@@ -114,13 +114,13 @@ a {
 }
 
 .card:before {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.300);
   width: 250%;
   height: 250%;
 }
 
 .card:after {
-  background: #363636;
+  background: #36363649;
   width: 200%;
   height: 200%;
 }

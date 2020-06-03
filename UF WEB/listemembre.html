@@ -5,11 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets\css\base.css">
         <link rel="stylesheet" href="assets\css\admin.css">
+        <link rel="stylesheet" href="assets\css\liste.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Document</title>
     </head>
-    <body>
+        <div class="sidebar__mobile">
+            <nav class="sidebar__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                        <p class="text">Solde</p>
+                        <p class="text">Julien</p>
+                    </li>
+                    <li class="nav__item">
+                        <a class="text">Catalogue</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="text" href="">Inscription</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="text" href="">Connexion</a>
+                    </li>
+                    {{for Catégories in categories}}
+                    <li class="nav__item">
+                        <a class="text" href="">Categorie name</a>
+                    </li>
+                    {{endfor}}
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay"></div>
     <header>
         <div class="navbar__1">
             <ul class="box">
@@ -32,16 +58,18 @@
                 <li class="navbar__content" >
                     Connexion
                 </li>
-                <li class="simple__text">
-                    Julien
-                </li>
                 <li>
                     <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
                 </li>
                 <li class="solde">10.99€</li>
             </ul>
+            <div class="burger__wrapper">
+                <div class="burger__menu">
+                </div>
+            </div>
         </div>
     </header>
+    <body>
         <div class="sidebar">
             <ul class="sidebar__menu">
                 <li class="sidebar__content">
@@ -57,31 +85,30 @@
                 </li>
                 <div class="border"></div>
                 <li class="sidebar__content">
-                    <a class="link">DashBoard</a>
+                    <a class="link">Vente</a>
                 </li>
                 <div class="border"></div>
             </ul>
         </div>
         <div class="container">
-            <div class="dashboard">
-                <div class="dashboard__item">
-                    <p class="label">Ventes (Semaine)</p>
-                    <p class="label">80</p>
+            <h1 class="item__name">Liste des Membres</h1>
+            <div class="border"></div>
+            <div class="list">
+                <div class="list__item">
+                    <p class="item__name">Nom :</p>
+                    <p class="item__name">Email :</p>
+                    <p class="item__name">Solde : </p>
+                    <p class="item__name">Role : </p>
+                    <div class="icons">
+                        <i class="material-icons w3-text-orange">delete_outline</i>
+                        <i class="material-icons w3-text-orange">create</i>
+                    </div>
                 </div>
-                <div class="dashboard__item">
-                    <p class="label">Chiffre d'affaire (Semaine)</p>
-                    <p class="label">50</p>
-                </div>
-                <div class="dashboard__item">
-                    <p class="label">Nombre de membre</p>
-                </div>
-                <div class="dashboard__item">
-                    <p class="label">Nouveaux membres (Semaine)</p>
-                    <p class="label">50</p>
-                </div>
-                <div class="dashboard__item">
-                    <p class="label"></p>
-                </div>
+                <div class="border__list"></div>
             </div>
         </div>
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+<script src="assets/js/burger.js"></script>
+</html>

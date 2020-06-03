@@ -4,6 +4,32 @@ html {
 body {
     height: 100%;
 }
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0 0;
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    justify-content: space-around;
+    height: max-content;
+    width: 50%;
+}
+.dashboard__item {
+    display: block;
+    border-left: 2px solid #f80;
+    border-bottom: 2px solid #f80;
+    padding-left: 10px;
+    border-radius: 5px 0 5px 5px;
+}
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
 .sidebar {
     top: 3%;
     display: block;
