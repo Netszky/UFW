@@ -23,6 +23,7 @@ body {
    border: 1px solid #333;
    height: auto;
    transition: ease-in 0.5s;
+   box-sizing: unset;
 }
 label {
     color: #363636;
@@ -33,7 +34,7 @@ input {
     border-radius: 2px;
     border: 1px solid #333;
     font-size: 17px;
-    margin: 7px auto;
+    margin: 15px auto!important;
     background: rgba(0, 0, 0, .9);
     padding: 20px;
     color: #fff;

@@ -56,7 +56,7 @@ body {
 }
 .button {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .note {
     background-color: #f90;

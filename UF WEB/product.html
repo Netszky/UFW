@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/product.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>{{nom du jeu}}</title>
 </head>
+<div class="sidebar__mobile">
+    <nav class="sidebar__nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                <p class="text">Solde</p>
+                <p class="text">Julien</p>
+            </li>
+            <li class="nav__item">
+                <a class="text">Catalogue</a>
+            </li>
+            <li class="nav__item">
+                <a class="text" href="">Inscription</a>
+            </li>
+            <li class="nav__item">
+                <a class="text" href="">Connexion</a>
+            </li>
+            {{for Catégories in categories}}
+            <li class="nav__item">
+                <a class="text" href="">Categorie name</a>
+            </li>
+            {{endfor}}
+        </ul>
+    </nav>
+</div>
+<div class="overlay"></div>
+<body>
 <header>
     <div class="navbar__1">
         <ul class="box">
@@ -24,15 +53,20 @@
                 </span>
             </li>
             <li class="navbar__content" >
-                Catégories
-            </li>
-            <li class="navbar__content" >
                 Inscription
             </li>
             <li class="navbar__content" >
                 Connexion
             </li>
+            <li>
+                <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+            </li>
+            <li class="solde">10.99€</li>
         </ul>
+        <div class="burger__wrapper">
+            <div class="burger__menu">
+            </div>
+        </div>
     </div>
 </header>
 <body>
@@ -79,6 +113,9 @@
             <div class="button">
                 <span class="note">
                     <a href="">Noter ce jeu</a>
+                </span>
+                <span class="note">
+                    <a href="">Acheter</a>
                 </span>
             </div>
         </div>

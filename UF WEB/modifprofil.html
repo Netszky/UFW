@@ -5,35 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/modifprofil.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Modifier Votre Profil</title>
 </head>
-<header>
-    <div class="navbar__1">
-        <ul class="box">
-            <li class="navbar__content logo">
-                <span class="logo__span1">Game</span>
-                <span class="logo__span2">Hub</span>
-            </li>
-            <li class="navbar__content">
-                <input class="search" type="text" placeholder="Rechercher parmis les 11,994,107 vidéos" maxlength="100" name="search" autocomplete="off">
-                <span class="search__button">
-                    <svg class="bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="Black" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
-                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
-                    </svg>
-                </span>
-            </li>
-            </li>
-            <li class="navbar__content" >
-                Inscription
-            </li>
-            <li class="navbar__content" >
+{% block navbar %}
+    <div class="sidebar__mobile">
+        <nav class="sidebar__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                    <p class="text">Solde</p>
+                    <p class="text">Julien</p>
+                </li>
+                <li class="nav__item">
+                    <a class="text">Catalogue</a>
+                </li>
+                <li class="nav__item">
+                    <a class="text" href="">Inscription</a>
+                </li>
+                <li class="nav__item">
+                    <a class="text" href="">Connexion</a>
+                </li>
+                {{for Catégories in categories}}
+                <li class="nav__item">
+                    <a class="text" href="">Categorie name</a>
+                </li>
+                {{endfor}}
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay"></div>
+    <body>
+    <header>
+        <div class="navbar__1">
+            <ul class="box">
+                <li class="navbar__content logo">
+                    <span class="logo__span1">Game</span>
+                    <span class="logo__span2">Hub</span>
+                </li>
+                <li class="navbar__content">
+                    <input class="search" type="text" placeholder="Rechercher parmis les 11,994,107 vidéos" maxlength="100" name="search" autocomplete="off">
+                    <span class="search__button">
+                        <svg class="bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="Black" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </span>
+                </li>
+                <li class="navbar__content" >
+                    Inscription
+                </li>
+                <li class="navbar__content" >
                     Connexion
                 </li>
+                <li>
+                    <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                </li>
+                <li class="solde">10.99€</li>
             </ul>
+            <div class="burger__wrapper">
+                <div class="burger__menu">
+                </div>
+            </div>
         </div>
     </header>
+    {% endblock %}
 <body>
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="sidebar__content">
+               <a href="ajoutjeu.html" class="link">FPS</a>
+            </li>
+            <div class="border"></div>
+            <li class="sidebar__content">
+                <a class="link">Action</a>
+            </li>
+            <div class="border"></div>
+            <li class="sidebar__content">
+                <a class="link">Horreur</a>
+            </li>
+            <div class="border"></div>
+            <li class="sidebar__content">
+                <a class="link">Vente</a>
+            </li>
+            <div class="border"></div>
+        </ul>
+    </div>
     <div class="container">
         <div class="form__content">
             <h1 class="title big">Modifier Votre Profil</h1>

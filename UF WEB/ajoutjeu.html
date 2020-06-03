@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/modifjeux.css">
     <link rel="stylesheet" href="assets/css/base.css">
-    <title>Modifier Jeu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ajouter Jeu</title>
 </head>
+<div class="sidebar__mobile">
+    <nav class="sidebar__nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                <p class="text">Solde</p>
+                <p class="text">Julien</p>
+            </li>
+            <li class="nav__item">
+                <a class="text">Catalogue</a>
+            </li>
+            <li class="nav__item">
+                <a class="text" href="">Inscription</a>
+            </li>
+            <li class="nav__item">
+                <a class="text" href="">Connexion</a>
+            </li>
+            {{for Catégories in categories}}
+            <li class="nav__item">
+                <a class="text" href="">Categorie name</a>
+            </li>
+            {{endfor}}
+        </ul>
+    </nav>
+</div>
+<div class="overlay"></div>
+<body>
 <header>
     <div class="navbar__1">
         <ul class="box">
@@ -27,11 +56,39 @@
                 Inscription
             </li>
             <li class="navbar__content" >
-                    Connexion
-                </li>
-            </ul>
+                Connexion
+            </li>
+            <li>
+                <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+            </li>
+            <li class="solde">10.99€</li>
+        </ul>
+        <div class="burger__wrapper">
+            <div class="burger__menu">
+            </div>
         </div>
-    </header>
+    </div>
+</header>
+<div class="sidebar">
+    <ul class="sidebar__menu">
+        <li class="sidebar__content">
+           <a href="ajoutjeu.html" class="link">FPS</a>
+        </li>
+        <div class="border"></div>
+        <li class="sidebar__content">
+            <a class="link">Action</a>
+        </li>
+        <div class="border"></div>
+        <li class="sidebar__content">
+            <a class="link">Horreur</a>
+        </li>
+        <div class="border"></div>
+        <li class="sidebar__content">
+            <a class="link">Vente</a>
+        </li>
+        <div class="border"></div>
+    </ul>
+</div>
 <body>
     <div class="container">
         <div class="form__content">
@@ -63,8 +120,11 @@
                 <h1 class="title">Prix</h1>
                 <input class="input__style" type="number" id="prix">
                 <div class="border__form"></div>
+                <h1 class="title">Catégories</h1>
+                <input class="input__style" type="text" id="categories">
+                <div class="border__form"></div>
                 <h1 class="title">Description</h1>
-                <textarea id="game__desc" placeholder="255 caractères" maxlength="255" rows="4" cols="64"></textarea>
+                <textarea class="game__desc" placeholder="255 caractères" maxlength="255" rows="4" cols="64"></textarea>
                 <div class="border__form"></div>
                 <h1 class="title">Image du Jeu</h1>
                 <input class="file" accept=".jpg,.jpeg,.png" type="file" id="game__image">

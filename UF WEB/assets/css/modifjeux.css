@@ -29,6 +29,7 @@ form {
    border: 1px solid #333;
    height: auto;
    transition: ease-in 0.5s;
+   box-sizing: unset;
 }
 label {
     color: #363636;
@@ -107,4 +108,7 @@ input:focus {
 }
 .file {
     color: #fff;
+}
+.game__desc {
+    width: 100%;
 }

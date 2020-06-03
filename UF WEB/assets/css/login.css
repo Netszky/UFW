@@ -38,6 +38,7 @@ body {
    border: 1px solid #333;
    height: auto;
    transition: ease-in 0.5s;
+   box-sizing: unset;
 }
 input {
     width: 100%;
