@@ -65,10 +65,5 @@ body {
     padding: 0;
 }
 .text {
-    color: #f90!important;
-    margin: 5px;
-    border-top: 2px solid #363636;
-    border-left: 2px solid #363636;
-    border-right: 2px solid #363636;
-    border-radius: 10px;
+    color: #f90;
 }
