@@ -50,7 +50,7 @@ a {
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
-  border: 10px solid #f80;
+  border: 5px solid #f80;
   text-decoration: none;
 }
 

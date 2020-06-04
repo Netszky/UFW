@@ -6,7 +6,35 @@
     <title>Login</title>
     <link rel="stylesheet" href="assets\css\login.css">
     <link rel="stylesheet" href="assets\css\base.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+<div class="sidebar__mobile">
+    <nav class="sidebar__nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+                <p class="text">Solde</p>
+                <p class="text">Julien</p>
+            </li>
+            <li class="nav__item">
+                <a class="text">Catalogue</a>
+            </li>
+            <li class="nav__item">
+                <a class="text" href="">Inscription</a>
+            </li>
+            <li class="nav__item">
+                <a class="text" href="">Connexion</a>
+            </li>
+            {{for Catégories in categories}}
+            <li class="nav__item">
+                <a class="text" href="">Categorie name</a>
+            </li>
+            {{endfor}}
+        </ul>
+    </nav>
+</div>
+<div class="overlay"></div>
 <header>
     <div class="navbar__1">
         <ul class="box">
@@ -27,9 +55,20 @@
                 Inscription
             </li>
             <li class="navbar__content" >
-                Connexion
+                <a href="" class="text"> Connexion</a>
             </li>
+            <li class="navbar__content">
+                Admin
+            </li>
+            <li>
+                <a class="profil" href="modifprofil.html"><i class="material-icons w3-text-orange">person</i></a>
+            </li>
+            <li class="solde">10.99€</li>
         </ul>
+        <div class="burger__wrapper">
+            <div class="burger__menu">
+            </div>
+        </div>
     </div>
 </header>
 <body>
@@ -38,13 +77,18 @@
     <div class="form__content">
         <h1>Connexion membre</h1>
         <p>Accédez à votre compte</p>
+        <div class="border__form"></div>
         <form action="" method="POST">
                 <input type="mail" id="mail" placeholder="E-mail" name="user_mail">
                 <input type="password" placeholder="Password" id="password">
+                <div class="border__form"></div>
                 <button type="submit" class="login_button">Connexion</button>
                 <span><a href="">Inscrivez-vous !</a></span>
         </form>
         <span><a href="">Nom d'utilisateur ou mot de passe oublié ?</a></span>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+<script src="assets/js/burger.js"></script>
 </html>
